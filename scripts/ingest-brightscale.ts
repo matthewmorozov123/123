@@ -123,7 +123,7 @@ function extractLinks(html: string, baseUrl: string) {
     }
   });
 
-  return [...links];
+    return Array.from(links);
 }
 
 function chunkText(text: string, maxChars = 1400, overlap = 180) {
